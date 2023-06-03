@@ -1,6 +1,7 @@
 import os
 allfiles = []
-for root, subfiles, files in os.walk("E:\\Data_\\Visual_Basic\\"):
+i = input("Enter Address: ")
+for root, subfiles, files in os.walk(str(i)):
 	for names in files:
 		allfiles.append(os.path.join(root,names))
 print('\n',allfiles)
